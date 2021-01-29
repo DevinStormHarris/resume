@@ -1,0 +1,11 @@
+body {
+    /* margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 150px; */
+
+    margin: auto;
+    border: 5px solid red;
+    max-width: fit-content;
+
+  }
