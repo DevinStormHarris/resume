@@ -22,7 +22,7 @@ jobs:
     - uses: chetan/invalidate-cloudfront-action@master
       env:
         DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
-        PATHS: /resume.html /script.js /stylesheet.css
+        PATHS: /index.html /script.js /stylesheet.css
         AWS_REGION: 'us-east-2'
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
