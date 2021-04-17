@@ -1,7 +1,10 @@
 updateVisitCount();
 
 function updateVisitCount() {
-    fetch('https://6fy80wkqb6.execute-api.us-east-2.amazonaws.com/prod/getCount')
+    fetch('https://6fy80wkqb6.execute-api.us-east-2.amazonaws.com/prod/getCount', 
+    {
+        method: 'POST'
+    })
         .then(response => {
         return response.json()
       })
