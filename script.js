@@ -10,6 +10,6 @@ function updateVisitCount() {
       })
         .then(data => {
             console.log(data)
-            document.getElementById('count').innerHTML = data;
+            document.getElementById('count').innerHTML = data.count;
         })
     }
