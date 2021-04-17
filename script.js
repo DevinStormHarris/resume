@@ -1,8 +1,10 @@
-$.ajax({
-    url: "https://8oyjli5ho2.execute-api.us-east-2.amazonaws.com/prod/test",
-    method: 'POST',
-    contentType: 'application/json',
-    success: function(response) {
-        $('#count').append(response.count)
-    }   
-  });
+function updateVisitCount() {
+    fetch('https://6fy80wkqb6.execute-api.us-east-2.amazonaws.com/prod/getCount')
+        .then(response => {
+        return response.json()
+      })
+        .then(data => {
+            console.log(data)
+//            document.getElementById('count').innerHTML = data;
+        })
+    }
