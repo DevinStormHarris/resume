@@ -1,3 +1,5 @@
+updateVisitCount();
+
 function updateVisitCount() {
     fetch('https://6fy80wkqb6.execute-api.us-east-2.amazonaws.com/prod/getCount')
         .then(response => {
@@ -5,6 +7,6 @@ function updateVisitCount() {
       })
         .then(data => {
             console.log(data)
-//            document.getElementById('count').innerHTML = data;
+            document.getElementById('count').innerHTML = data;
         })
     }
